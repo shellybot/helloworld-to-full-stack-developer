@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TABLES</title>
+</head>
+<style>
+
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+   padding: 10px;
+}
+th{
+    text-align: right;
+}
+tr:nth-child(even){
+    color: aqua;
+    backface-visibility: visible;
+    background-color: darkmagenta;
+}
+
+</style>
+<body>
+<p>tables and the formation of sheets are really plays a imposrtant role in the management of the databases</p>
+<!--table syntax-->
+<table>
+    <caption><b>user information</b></caption>
+<tr>
+    <th>name</th>
+    <th>field</th>
+    <th colspan="2">emailid</th>
+</tr>
+<tr>
+    <td>akshay sharma</td>
+    <td>frontend developer</td>
+    <td>akshay01@gmail.com</td>
+    <td>akshay01@gmail.com</td>
+</tr>
+<tr>
+        <td>puneet sharma</td>
+        <td>backend developer</td>
+        <td>akshay01@gmail.com</td>
+        <td>akshay01@gmail.com</td>
+    </tr>
+    <tr>
+            <td>anjali sharma</td>
+            <td>frontend developer</td>
+            <td>akshay01@gmail.com</td>
+            <td>akshay01@gmail.com</td>
+        </tr>
+            
+<p>this above table does not have any boundary</p>
+<!--to create boundary and alignment-->
+<table id="bound">
+        <tr>
+            <th>name</th>
+            <th rowspan="2">field</th>
+            <th>emailid</th>
+        </tr>
+        <tr>
+            <td>akshay sharma</td>
+            <td>frontend developer</td>
+            <td>akshay01@gmail.com</td>
+        </tr>
+        <tr>
+                <td>puneet sharma</td>
+                <td>backend developer</td>
+                <td>akshay01@gmail.com</td>
+            </tr>
+            <tr>
+                    <td>anjali sharma</td>
+                    <td>frontend developer</td>
+                    <td>akshay01@gmail.com</td>
+                </tr>
+                    
+
+
+
+
+</table>
+</body>
+</html>
